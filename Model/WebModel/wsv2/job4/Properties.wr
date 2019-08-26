@@ -1,0 +1,8 @@
+<Job xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="120" gr:y="430" id="wsv2#job4" name="conteoDias">
+  <OperationUnits>
+    <InitJobUnit id="wsv2#job4#iju4" name="Init Job">
+      <OKLink id="wsv2#job4#iju4#oln1497" name="OKFlow1497" to="wsv2#job4#miu175" automaticCoupling="true"/>
+    </InitJobUnit>
+    <ModuleInstanceUnit gr:x="110" gr:y="25" id="wsv2#job4#miu175" action="true" name="conteoDias" moduleId="mov2#mpkg9#opm114"/>
+  </OperationUnits>
+</Job>

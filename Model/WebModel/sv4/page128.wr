@@ -1,0 +1,303 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-1600" gr:y="-460" id="sv4#page128" layout:pageLayout="gobmxStyle/landingFianzas" name="Fianzas por verncer y vencidadas" localized="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="75" id="sv4#page128#pwu41" sortable="true" checkable="false" useCountQuery="false" entity="ent87" displayAttributes="rel70#role139.ent96#att565 rel70#role139.ent96#att566 rel70#role139.ent96#att567 rel68#role135.ent97#att580 ent87#att525 ent87#att527 ent87#att528 ent87#att546" name="Lista de vencimiento 30 dias">
+      <Selector id="sv4#page128#pwu41#su538" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page128#pwu41#su538#kcond235" name="KeyCondition235" predicate="in" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+    <PowerIndexUnit gr:x="5" gr:y="230" id="sv4#page128#pwu45" sortable="true" checkable="false" useCountQuery="false" entity="ent87" name="Lista de vencimiento 15 d&#237;as" displayAttributes="rel70#role139.ent96#att565 rel70#role139.ent96#att566 rel70#role139.ent96#att567 rel68#role135.ent97#att580 ent87#att525 ent87#att527 ent87#att528 ent87#att546">
+      <Selector id="sv4#page128#pwu45#su545" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page128#pwu45#su545#kcond236" name="KeyCondition236" predicate="in" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+    <PowerIndexUnit id="sv4#page128#pwu46" name="Lista de vencimiento 1 d&#237;a" gr:x="270" gr:y="80" sortable="true" checkable="false" useCountQuery="false" entity="ent87" displayAttributes="rel70#role139.ent96#att565 rel70#role139.ent96#att566 rel70#role139.ent96#att567 rel68#role135.ent97#att580 ent87#att525 ent87#att527 ent87#att528 ent87#att546">
+      <Selector id="sv4#page128#pwu46#su546" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page128#pwu46#su546#kcond239" name="KeyCondition239" predicate="in" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+    <PowerIndexUnit id="sv4#page128#pwu47" name="Lista de vencidos" gr:x="280" gr:y="225" sortable="true" checkable="false" useCountQuery="false" entity="ent87" displayAttributes="rel70#role139.ent96#att565 rel70#role139.ent96#att566 rel70#role139.ent96#att567 rel68#role135.ent97#att580 ent87#att525 ent87#att527 ent87#att528 ent87#att546" linkOrder="sv4#page128#pwu47#ln1556">
+      <Selector id="sv4#page128#pwu47#su547" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#page128#pwu47#su547#acond253" name="AttCondition253" predicate="lteq" booleanOperator="or" implied="false" attributes="ent87#att546" value="0"/>
+      </Selector>
+      <Link id="sv4#page128#pwu47#ln1556" name="Flow1556" to="sv4#miu180" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+    <MultiMessageUnit gr:x="10" gr:y="5" id="sv4#page128#mssu58" name="30 D&#205;AS">
+      <Message xml:space="preserve">Esta lista muestra a los fedatarios que tienen 30  d&#237;as para que su fianza finalice.</Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit id="sv4#page128#mssu62" name="15 D&#205;AS" gr:x="120" gr:y="0">
+      <Message xml:space="preserve">Esta lista muestra a los fedatarios que tienen 15 d&#237;as para que su fianza finalice.</Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit id="sv4#page128#mssu63" gr:x="260" gr:y="10" name="1 D&#205;A">
+      <Message xml:space="preserve">Esta lista muestra a los fedatarios que tienen 1  d&#237;a para que su fianza finalice.</Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit id="sv4#page128#mssu64" name="0 D&#205;AS" gr:x="385" gr:y="10">
+      <Message xml:space="preserve">Esta lista muestra a los fedatarios que su fianza ha vencido.</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#mssu58"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#pwu41">
+          <layout:Attribute attribute="rel70#role139.ent96#att565"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att566"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att567"/>
+          <layout:Attribute attribute="rel68#role135.ent97#att580"/>
+          <layout:Attribute attribute="ent87#att525"/>
+          <layout:Attribute attribute="ent87#att527"/>
+          <layout:Attribute attribute="ent87#att528"/>
+          <layout:Attribute attribute="ent87#att546"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#mssu62"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#pwu45">
+          <layout:Attribute attribute="rel70#role139.ent96#att565"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att566"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att567"/>
+          <layout:Attribute attribute="rel68#role135.ent97#att580"/>
+          <layout:Attribute attribute="ent87#att525"/>
+          <layout:Attribute attribute="ent87#att527"/>
+          <layout:Attribute attribute="ent87#att528"/>
+          <layout:Attribute attribute="ent87#att546"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#mssu63"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#pwu46">
+          <layout:Attribute attribute="rel70#role139.ent96#att565"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att566"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att567"/>
+          <layout:Attribute attribute="rel68#role135.ent97#att580"/>
+          <layout:Attribute attribute="ent87#att525"/>
+          <layout:Attribute attribute="ent87#att527"/>
+          <layout:Attribute attribute="ent87#att528"/>
+          <layout:Attribute attribute="ent87#att546"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#mssu64"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page128#pwu47">
+          <layout:Attribute attribute="rel70#role139.ent96#att565"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att566"/>
+          <layout:Attribute attribute="rel70#role139.ent96#att567"/>
+          <layout:Attribute attribute="rel68#role135.ent97#att580"/>
+          <layout:Attribute attribute="ent87#att525"/>
+          <layout:Attribute attribute="ent87#att527"/>
+          <layout:Attribute attribute="ent87#att528"/>
+          <layout:Attribute attribute="ent87#att546"/>
+          <layout:Link link="sv4#page128#pwu47#ln1556"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <layout:LayoutParameter name="show-right-column" value="false" type="page"/>
+</Page>
